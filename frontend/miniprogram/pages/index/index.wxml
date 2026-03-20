@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="banner">
+    <text class="title">新能源资讯聚合平台</text>
+  </view>
+  
+  <view class="quick-actions">
+    <view class="action-item" bindtap="goToNews">
+      <text class="action-text">查看资讯</text>
+    </view>
+    <view class="action-item" bindtap="goToTools">
+      <text class="action-text">使用工具</text>
+    </view>
+    <view class="action-item" bindtap="goToTech">
+      <text class="action-text">技术推广</text>
+    </view>
+  </view>
+  
+  <view class="news-list">
+    <view class="news-item" wx:for="{{newsList}}" wx:key="id" bindtap="viewNewsDetail" data-id="{{item.id}}">
+      <text class="news-title">{{item.title}}</text>
+      <text class="news-source">{{item.source}} • {{item.date}}</text>
+    </view>
+  </view>
+</view>
