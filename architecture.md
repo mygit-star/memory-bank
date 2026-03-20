@@ -7,11 +7,29 @@
 ### 前端组件 (微信小程序)
 - app.js: 小程序入口文件，定义全局变量和生命周期函数
 - app.json: 小程序全局配置，定义页面路径、窗口表现等
+- sitemap.json: 小程序页面索引配置
+- images/: 图片资源文件夹
 - pages/: 页面组件集合
   - index/: 首页，展示最新资讯和快速访问入口
-  - news/: 资讯页面，展示分类资讯列表
+    - index.wxml: 页面结构
+    - index.js: 页面逻辑
+    - index.wxss: 页面样式
+  - news/: 资讯列表页面，展示分类资讯列表
+    - news.wxml: 页面结构
+    - news.js: 页面逻辑
+    - news.wxss: 页面样式
+    - detail/: 资讯详情页面
+      - detail.wxml: 详情页面结构
+      - detail.js: 详情页面逻辑
+      - detail.wxss: 详情页面样式
   - tools/: 工具页面，提供各种新能源相关的计算工具
+    - tools.wxml: 页面结构
+    - tools.js: 页面逻辑
+    - tools.wxss: 页面样式
   - profile/: 个人中心/技术推广页面
+    - profile.wxml: 页面结构
+    - profile.js: 页面逻辑
+    - profile.wxss: 页面样式
 
 ### 后端组件 (Node.js + Express)
 - server.js: 服务器入口文件，定义API路由和服务配置
