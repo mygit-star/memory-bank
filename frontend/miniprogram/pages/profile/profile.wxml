@@ -1,0 +1,25 @@
+<!--pages/profile/profile.wxml-->
+<view class="container">
+  <view class="profile-header">
+    <view class="avatar">👤</view>
+    <text class="username">新能源专家</text>
+    <text class="user-info">致力于推动新能源行业发展</text>
+  </view>
+  
+  <view class="profile-content">
+    <view class="section">
+      <text class="section-title">技术推广</text>
+      <view class="promotion-item" wx:for="{{promotions}}" wx:key="id">
+        <text class="promotion-title">{{item.title}}</text>
+        <text class="promotion-desc">{{item.description}}</text>
+      </view>
+    </view>
+    
+    <view class="section">
+      <text class="section-title">我的收藏</text>
+      <view class="favorite-item" wx:for="{{favorites}}" wx:key="id">
+        <text class="favorite-title">{{item.title}}</text>
+      </view>
+    </view>
+  </view>
+</view>

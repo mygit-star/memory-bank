@@ -1,0 +1,16 @@
+<!--pages/news/detail.wxml-->
+<view class="container">
+  <view class="news-detail" wx:if="{{newsDetail}}">
+    <text class="news-title">{{newsDetail.title}}</text>
+    <view class="news-meta">
+      <text class="news-source">{{newsDetail.source}}</text>
+      <text class="news-date">{{newsDetail.date}}</text>
+    </view>
+    <view class="news-content">
+      <text class="content-text">{{newsDetail.content}}</text>
+    </view>
+  </view>
+  <view class="loading" wx:else>
+    <text>加载中...</text>
+  </view>
+</view>
